@@ -35,7 +35,7 @@ Start the servers by running below command
 npm start
 ```
 
-###Important Note
+### Important Note
 some browsers block the XMLHttpRequest between local servers.
 So, before start they server make sure your browser doesn;t block XMLHttpRequest
 To work with project you need to disable your browser [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 
