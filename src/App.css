@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.nav-bar{
+  background-color:  rgb(235, 57, 196);
+  height:60px;
+  border-radius:20px;
+  margin:10px;
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar-right{ 
+  display:flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: space-between;
+ 
+}
+.nav-bar-right h2{
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-img{
+  height:60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar-left{
+  display: flex;
+  margin-right:20px;
+  color:aqua;
+  display:flex;
+  align-items: center;
+  
+  padding:5px;
+  margin:20px;
+  cursor:pointer;
+  transition:1s;
+}
+.input{
+  border:3px solid grey ;
+  border-radius: 10px;
+  height:25px;
+  width:150px;
+  margin:10px;
+}
+
+.search-icon{
+  height:30px;
+}
+
+/*  *************** Body********************** */
+
+.body{
+  display:flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+  padding:20px;
+}
+.main-heading{
+  margin: 0 auto;
+  margin-top:20px;
+  color:blue;
+  padding:20px;
+}
+.search-bar-input{
+  width:100%;
+  align-items: center;
+  margin: 0,auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.search-bar-input .input{
+  border:3px solid grey ;
+  border-radius: 10px;
+  height:25px;
+  width:300px;
+  margin:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.fetch-btn{
+  width: 60px;
+  height: 30px;
+  color:green;
+  background-color: aqua;
+  border-radius: 10px;
+  border:2px solid;
+  cursor:pointer;
+  font-weight: 600;
+   transition: 0.5s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetch-btn:hover{
+  background-color: rgb(109, 209, 33);
+  color:white;
+  width: 75px;
+  height:35px;
+  font-size: 20px;
+  border:2px solid
 }
