@@ -11,7 +11,7 @@ click [here](https://developer.twitter.com/en/support/twitter-api/developer-acco
 
 Before running project make sure you have developer account and added all the required keys in the twitter-analysis/api/config.py file
 
-For this  project only bearer token is required.
+This  project requires only the bearer token.
 ### Steps 
 clone this project 
 ```
