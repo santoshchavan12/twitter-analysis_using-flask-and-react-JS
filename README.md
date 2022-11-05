@@ -7,7 +7,12 @@ you need a [developer account](https://developer.twitter.com/en) to use this lib
 React JS is used for the frontend and flask is used for backend.
 
 click [here](https://developer.twitter.com/en/support/twitter-api/developer-account) to know how create one.
-## Building and Running
+# Building and Running
+
+Before running project make sure you have developer account and added all the required keys in the twitter-analysis/api/config.py file
+
+For this  project only bearer token is required.
+### Steps 
 clone this project 
 ```
 $ git clone https://github.com/santoshchavan12/twitter-analysis_using-flask-and-react-JS.git
