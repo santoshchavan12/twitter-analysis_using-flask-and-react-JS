@@ -45,5 +45,5 @@ if __name__ == '__main__':
     app.run(debug=True,port=5000)
 
 
-# future project
+# future idea
 # filters like images, specific duration
