@@ -46,4 +46,4 @@ if __name__ == '__main__':
 
 
 # future idea
-# filters like images, specific duration
+# filters like specific duration,location,specific user tweets etc
