@@ -21,16 +21,16 @@ navigate into repo
 ```
 $ cd twitter-analysis
 ```
-run the commmand
+run the command
 ```
 pip3 install -r requirements.txt
 ```
-run command 
+run the command 
 ```
 $ npm install node-modules
 ```
 
-run command 
+run the command 
 ```
 npm install concurrently --save
 ```
