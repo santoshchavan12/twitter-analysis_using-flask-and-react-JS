@@ -4,3 +4,5 @@ bearer_token = f"AAAAAAAAAAAAAAAAAAAAAB8PdQEAAAAAW%2F4jQfyI%2F55pVmAji76cpXpPN7g
 access_token = "1424226903670628354-eiuIbia2B6CRX5hiMrPX3K56RftrxD"
 access_token_secret = "JDCzVQj8VzaQ49AkIAlAYP1E9PAqj3XEHJKPjGopxalyN"
 user_id = '1424226903670628354'
+# import nltk
+# nltk.download("stopwords")
