@@ -12,12 +12,12 @@ function NavBar() {
           <h2>Twitter</h2>
         </div>
         <div className="nav-bar-left">
-          <img
+          {/* <img
             className="search-icon"
             src={require("../images/search-icon.png")}
             alt="logo"
-          ></img>
-          <h4> Project</h4>
+          ></img> */}
+          <h3> Project</h3>
         </div>
       </nav>
     );
