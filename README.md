@@ -32,12 +32,12 @@ $ npm install node-modules
 
 run the command 
 ```
-npm install concurrently --save
+$ npm install concurrently --save
 ```
 
 Start the servers by running below command
 ```
-npm start
+$ npm start
 ```
 
 
