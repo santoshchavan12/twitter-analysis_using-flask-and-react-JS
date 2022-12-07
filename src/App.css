@@ -82,23 +82,20 @@
 }
 
 .fetch-btn{
-  width: 60px;
-  height: 30px;
-  color:green;
+  width: 90px;
+  height: 50px;
+  color:blue;
   background-color: aqua;
   border-radius: 10px;
   border:2px solid;
   cursor:pointer;
   font-weight: 600;
-   transition: 0.5s;
+  transition: 0.5s;
 }
 .fetch-btn:hover{
   background-color: rgb(109, 209, 33);
   color:white;
-  width: 75px;
-  height:35px;
-  font-size: 20px;
-  border:2px solid
+  border:2px solid black;
 }
 
 .result-count{
