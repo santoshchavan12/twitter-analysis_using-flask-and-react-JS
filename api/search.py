@@ -1,9 +1,11 @@
 import tweepy
 import config
 from flask import Flask,request
+from flask_cors import CORS
 import main
 
 app = Flask(__name__)
+CORS(app)
 class Tweet(Flask):
     def __init__(params):
         pass

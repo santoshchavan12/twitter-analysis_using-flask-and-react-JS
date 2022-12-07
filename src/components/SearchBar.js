@@ -24,7 +24,7 @@ export default function SearchBar() {
         .post("http://localhost:5000/data", myParams, { "Content-type":"application/json" },
         )
         .then(function (response) {
-          console.log(response.data.tweets);
+          console.log(response.data.tweets["url"]);
           setData(response.data.tweets);
         })
         .catch(function (error)
@@ -33,13 +33,13 @@ export default function SearchBar() {
         });
     e.preventDefault();
   }
-  console.log(data.Positive)
+  console.log(data["Positive"])
   return (
     <div className="body">
       <p style={{ textAlign: "justify", textJustify: "inter-word" }}>
         This is realtime tweet analysis project. Based on the hashtag or any key
-        words entered program will be able to fetch the tweets from twitter.
-        Tweepy python library is used to fetch the data from twitter. you need a
+        words entered, program will be able to fetch the tweets from twitter.
+        Tweepy python library is used to fetch the data from twitter. You need a
         developer account to use this library. React JS is used for the frontend
         and flask is used for backend.
       </p>
@@ -85,7 +85,8 @@ export default function SearchBar() {
       <br />
       <br />
       <div className="result">
-        {typeof data.Tweets === "undefined" ? (
+        {typeof data.Tweets === "undefined"
+          ? (
           <>
             <img src={require("../images/loading.gif")} alt="logo"></img>
           </>
@@ -100,7 +101,8 @@ export default function SearchBar() {
               <br></br>
             </div>
           ) &&
-          data.Tweets.map(function (item, i) {
+            (
+            data["Tweets"].map(function (item, i) {
             const pos = data.Positive;
             const neu = data.Neutral;
             const neg = data.Negative;
@@ -133,37 +135,42 @@ export default function SearchBar() {
                   {item}
                 </li>
               );
+              
             return (
-              <>
-                <center>
-                  <li
-                    key={i}
-                    style={{
-                      marginBottom: "20px",
-                      color: "blue",
-                    }}
-                  >
-                    {item}
-                    <br></br>
-                  </li>
-
+              <center className="result-body">
+                <div className="result-card">
                   <img
                     style={{
                       height: "300px",
                       width: "300px",
                       alignItems: "center",
+                      border: "10px solid pink",
+                      borderRadius: "0px 50px",
                     }}
                     src={url[i]}
                     alt="twitter-img"
                   ></img>
-                </center>
+                  <li
+                    key={i}
+                    style={{
+                      marginBottom: "20px",
+                      color: "blue",
+                      fontSize: "20px",
+                      justifyContent:"space-around"
+                    }}
+                  >
+                    {item}
+                    <br></br>
+                  </li>
+                  </div>
                 <br></br>
                 <br></br>
                 <br></br>
-              </>
+              </center>
             );
+         
           })
-        )}
+        ))}
         <br />
       </div>
     </div>
